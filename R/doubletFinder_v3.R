@@ -74,7 +74,6 @@ doubletFinder_v3 <- function(seu, PCs, pN = 0.25, pK, nExp, reuse.pANN = FALSE, 
     }
 
     if (sct == TRUE) {
-      require(sctransform)
       print("Creating Seurat object...")
       seu_wdoublets <- CreateSeuratObject(counts = data_wdoublets)
 
